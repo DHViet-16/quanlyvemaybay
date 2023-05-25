@@ -1,0 +1,5 @@
+051203001572,41,One way,Hcm,Vinh,27/05/2023,,1,Vietnam Airlines,Trader,500000,500000,
+043002345689,18467,One way,Hcn,Ha Noi,27/05/2023,,2,Vietjet Air,Common,200000,400000,
+053482671023,6334,One way,Hcm,Da Nang,28/06/2023,,1,Jetstar Pacific,Trader,250000,250000,
+043000568752,26500,One way,Hcm,Ha Long Bay,29/05/2023,,3,Trader,Bamboo Airways,200000,600000,
+043002345689,19169,Round-trip,Ha Tinh,Hcm,30/05/2023,02/06/2023,1,Vietnam Airlines,Trader,360000,720000,

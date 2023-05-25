@@ -1,0 +1,8 @@
+1,0001,Nam Truong,Male,26,095236402,namtruong@gmail.com,Quang Ngai,
+1,0002,Duc Trong,Male,25,0983523486,ductrong@gmail.com,Quang Ngai,
+1,0003,My Quyen,Female,24,0985463287,myquyen@gmail.com,Binh Dinh,
+1,0004,Nhu Ngoc,Female,24,0973246587,nhungoc@gmail.com,Long An,
+2,051203001572,Dang Hoang Viet,Male,20,0972017749,hoangviet@gmail.com,TP HCM,
+2,043002345689,Vo Minh Hanh,Male,21,0975623465,minhhanh@gmail.com,Ha Tinh,
+2,053482671023,Xuan Thu,Female,24,0978236525,thu@gmail.com,Ca Mau,
+2,043000568752,Quoc Toan,Male,25,0983355622,quoctoan@gmail.com,Phu Yen,
