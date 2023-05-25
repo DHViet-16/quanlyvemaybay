@@ -1,15 +1,15 @@
 #include "BookTicket.h"
 
 BookTicket::BookTicket(){};
-BookTicket::BookTicket(string idUser, int idBill, string trip, string departure, string detination, string playDay, string playReturn, int quantity, string AirlineName, string seatClass, float unitPrice, float totalPayment)
+BookTicket::BookTicket(string idUser, int idBill, string trip, string departure, string detination, string flyDay, string flyReturn, int quantity, string AirlineName, string seatClass, float unitPrice, float totalPayment)
 {
     this->idUser = idUser;
     this->idBill = idBill;
     this->trip = trip;
     this->departure = departure;
     this->detination = detination;
-    this->playDay = playDay;
-    this->playReturn = playReturn;
+    this->flyDay = flyDay;
+    this->flyReturn = flyReturn;
     this->quantity = quantity;
     this->AirlineName = AirlineName;
     this->seatClass = seatClass;
@@ -56,21 +56,21 @@ string BookTicket::getDetination()
 {
     return detination;
 }
-void BookTicket::setPlayDay(string)
+void BookTicket::setflyDay(string)
 {
-    this->playDay = playDay;
+    this->flyDay = flyDay;
 }
-string BookTicket::getPlayDay()
+string BookTicket::getflyDay()
 {
-    return playDay;
+    return flyDay;
 }
-void BookTicket::setPlayReturn(string playReturn)
+void BookTicket::setflyReturn(string flyReturn)
 {
-    this->playReturn = playReturn;
+    this->flyReturn = flyReturn;
 }
-string BookTicket::getPlayReturn()
+string BookTicket::getflyReturn()
 {
-    return playReturn;
+    return flyReturn;
 }
 void BookTicket::setQuantity(int quantity)
 {
@@ -128,8 +128,8 @@ void BookTicket::readFileBookTicket(ifstream &inFile)
     getline(inFile, this->trip, ',');
     getline(inFile, this->departure, ',');
     getline(inFile, this->detination, ',');
-    getline(inFile, this->playDay, ',');
-    getline(inFile, this->playReturn, ',');
+    getline(inFile, this->flyDay, ',');
+    getline(inFile, this->flyReturn, ',');
     inFile >> this->quantity;
     inFile >> x;
     getline(inFile, this->AirlineName, ',');
@@ -147,8 +147,8 @@ void BookTicket::exportFileBookTicket(ofstream &outFile)
     outFile << this->trip << ",";
     outFile << this->departure << ",";
     outFile << this->detination << ",";
-    outFile << this->playDay << ",";
-    outFile << this->playReturn << ",";
+    outFile << this->flyDay << ",";
+    outFile << this->flyReturn << ",";
     outFile << this->quantity << ",";
     outFile << this->AirlineName << ",";
     outFile << this->seatClass << ",";
@@ -182,11 +182,11 @@ void BookTicket::input(ACCOUNTSLIST &acc, int index)
     getline(cin, detination);
     standardizeName(detination);
     cout << "\t\t\t\tDate of departure(DD/MM/YYYY): ";
-    cin >> playDay;
+    cin >> flyDay;
     if (selection == 2)
     {
         cout << "\t\t\t\tDate of destination(DD/MM/YYYY): ";
-        cin >> playReturn;
+        cin >> flyReturn;
     }
     cout << "\t\t\t\tNumber of passengers: ";
     cin >> quantity;
@@ -219,8 +219,8 @@ void BookTicket::output()
     cout << "\t\t\t\tOne way/ Round-trip: " << this->trip << endl;
     cout << "\t\t\t\tPoint of departure: " << this->departure << endl;
     cout << "\t\t\t\tDestination: " << this->detination << endl;
-    cout << "\t\t\t\tDate of departure(DD/MM/YYYY): " << this->playDay << endl;
-    cout << "\t\t\t\tDate of destination(DD/MM/YYYY): " << this->playReturn << endl;
+    cout << "\t\t\t\tDate of departure(DD/MM/YYYY): " << this->flyDay << endl;
+    cout << "\t\t\t\tDate of destination(DD/MM/YYYY): " << this->flyReturn << endl;
     cout << "\t\t\t\tNumber of passengers: " << this->quantity << endl;
     cout << "\t\t\t\tName of Airline: " << this->AirlineName << endl;
     cout << "\t\t\t\tSeat class(Trader/Common): " << this->seatClass << endl;

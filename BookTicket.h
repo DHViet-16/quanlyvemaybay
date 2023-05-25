@@ -17,8 +17,8 @@ private:
     float unitPrice;
     string departure;
     string detination;
-    string playDay;
-    string playReturn;
+    string flyDay;
+    string flyReturn;
     string seatClass;
     string AirlineName;
     float totalPayment;
@@ -36,10 +36,10 @@ public:
     string getDeparture();
     void setDetination(string);
     string getDetination();
-    void setPlayDay(string);
-    string getPlayDay();
-    void setPlayReturn(string);
-    string getPlayReturn();
+    void setflyDay(string);
+    string getflyDay();
+    void setflyReturn(string);
+    string getflyReturn();
     void setQuantity(int);
     int getQuantity();
     void setAirlineName(string);
